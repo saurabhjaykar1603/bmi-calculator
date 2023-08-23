@@ -20,10 +20,16 @@ function calculateBmi() {
         console.log("Overweight");
     }
 
-    else if (bmi >= 30 ) {
+    else if (bmi >= 30) {
         console.log("Obese");
 
 
     }
 
+}
+
+function resetBmi() {
+    inputHeigtBox1.value = " ";
+    inputWeightBox2.value = " ";
+    bmiText.innerHTML =  " ";
 }
