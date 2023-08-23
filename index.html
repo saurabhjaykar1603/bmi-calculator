@@ -18,9 +18,8 @@
             <div class="card-body">
                 <h5 class="text-center fs-2">BMI Calculator</h5>
                 <div class="d-flex flex-column text-center card py-4">
-                    <h6 class="fs-3">Age</h6>
-                    <input type="text" class="form-control d-block mx-auto mt-2" id="exampleFormControlInput1"
-                        style="width: 50%;">
+                    <h6 class="fs-3">Your BMI : <span class="" id="answer">00</span> </h6>
+                   
                 </div>
 
             </div>
@@ -33,7 +32,7 @@
                                     <div class="d-flex flex-column text-center ">
                                         <h6>Height</h6>
                                         <span>(cm)</span>
-                                        <input type="number" class="form-control">
+                                        <input type="number" class="form-control" id="height">
                                     </div>
                                 </div>
                             </div>
@@ -44,13 +43,14 @@
                                     <div class="d-flex flex-column text-center ">
                                         <h6>Weight</h6>
                                         <span>(kg)</span>
-                                        <input type="number" class="form-control">
+                                        <input type="number" class="form-control" id="weight"> 
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <button class="btn btn-primary mt-4" type="button">Calculate BMI</button>
+                    <button class="btn btn-primary mt-3" type="button" onclick="calculateBmi()">Calculate BMI</button>
+                    <button class="btn btn-danger mt-2" type="button" onclick="calculateBmi()">Reset</button>
                 </div>
 
             </div>
